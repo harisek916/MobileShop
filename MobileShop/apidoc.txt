@@ -1,0 +1,53 @@
+1. fetch all mobile object
+    url:http://127.0.0.1:8000/api/v1/mobiles/
+    method:get
+    authorization:null
+    data:null
+    status:completed
+
+2. create a mobile object
+    url:http://127.0.0.1:8000/api/v1/mobiles/
+    method:post
+    authorization:null
+    data:{
+            title:"string"
+            price:positive integer
+            brand:"string"
+            specs:"string"
+            picture:image
+        }
+    status:completed
+
+3. fetch a specific mobile object
+    url:http://127.0.0.1:8000/api/v1/mobiles/{id}/
+    method:get
+    authorization:null
+    data:null
+    status:completed
+
+
+4. update a mobile object
+    url:http://127.0.0.1:8000/api/v1/mobiles/{id}/
+    method:put
+    authorization:null
+    data:{
+            title:"string"
+            price:positive integer
+            brand:"string"
+            specs:"string"
+            picture:image
+        }
+    status:completed
+
+5. delete a mobile object
+    url:http://127.0.0.1:8000/api/v1/mobiles/{id}/
+    method:delete
+    authorization:null
+    data:null
+    status:completed
+
+
+
+
+
+

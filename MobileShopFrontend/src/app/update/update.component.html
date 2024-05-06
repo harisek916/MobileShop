@@ -1,0 +1,33 @@
+
+
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+            <form [formGroup]="mobileUpdateForm" (ngSubmit)="updateMobile()" action="" enctype="multipart/form-data" class="shadow p-5 rounded-3">
+                <h5 class="fw-bolder text-center mb-2">Add Mobile</h5>
+                <div>
+                    <label for="" >enter title</label>
+                    <input class="form-control mb-2" placeholder="enter title" type="text" formControlName="title">
+                </div>
+                <div>
+                    <label for="">enter price</label>
+                    <input class="form-control mb-2" placeholder="enter price" type="number" formControlName="price">
+                </div>
+                <div>
+                    <label for="">enter brand</label>
+                    <input class="form-control mb-2" placeholder="enter brand" type="text" formControlName="brand">
+                </div>
+                <div>
+                    <label for="">enter specs</label>
+                    <input class="form-control mb-2" placeholder="enter specs" type="text" formControlName="specs">
+                </div>
+                <div class="d-flex justify-content-center mt-3">
+                    <button type="submit" class="btn btn-outline-success">update</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-3"></div>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+
+
+
+<div class="container mt-3">
+    <table class="table table-hover table-bordered table-striped border border-dark">
+        <tr>
+            <th>title</th>
+            <th>price</th>
+            <th>brand</th>
+            <th>specs</th>
+            <th class="text-center">action</th>
+        </tr>
+        <tr class="" *ngFor="let mobile of mobileData">
+            <td>{{mobile.title}}</td>
+            <td>{{mobile.price}} </td>
+            <td>{{mobile.brand}} </td>
+            <td>{{mobile.specs}} </td>
+            <td class="d-flex justify-content-evenly">
+                <a href="" [routerLink]="['mobile',mobile.id]" class="btn-link">view</a>
+                <a href="" [routerLink]="['mobile/',mobile.id,'update']" class="btn btn-link">update</a>
+                <button type="button"  (click)="destroyMobile(mobile.id)" class="btn btn-outline-danger">delete</button>
+            </td>
+        </tr>
+    </table>
+</div>
+

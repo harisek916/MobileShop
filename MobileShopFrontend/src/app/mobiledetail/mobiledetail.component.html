@@ -1,0 +1,21 @@
+
+
+<div class="container d-flex justify-content-center mt-3">
+    <div *ngIf="mobileDetail" class="card" style="width: 18rem;">
+      
+        <img src="http://127.0.0.1:8000{{mobileDetail.picture}}" class="card-img-top" alt="{{mobileDetail.picture}}">
+        <div class="card-body">
+          <h5 class="card-title">{{mobileDetail.title}}</h5>
+          <p class="card-text">{{mobileDetail.price}} </p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"></li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+</div>
